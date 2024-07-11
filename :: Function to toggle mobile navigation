@@ -1,0 +1,14 @@
+// Function to toggle mobile navigation
+function toggleNav() {
+    const nav = document.querySelector('nav ul');
+    nav.classList.toggle('open');
+}
+
+// Event listener for the nav toggle on smaller screens
+document.querySelector('.nav-toggle').addEventListener('click', toggleNav);
+
+// Simple image slider for the gallery
+let currentSlide = 0;
+const slides = document.querySelectorAll('.gallery-item');
+function showSlide(index) {
+    slides[currentSlide].style.display = 'none';
